@@ -5,44 +5,50 @@ body {
 }
 
 /* Estilos para dispositivos móviles */
-.ventana-emergente-mobile {
+.register {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#01ACEF, #2ECFEC, #DAB5EA);
+    background: linear-gradient(#2D1445, #330950, #420A64, #5D0C87);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 
-.ventana-emergente-mobile img {
+.register img {
     max-width: 80%; /* Reduzco el tamaño de la imagen al 80% del contenedor */
     height: auto;
     margin-bottom: 20px; /* Agrego un margen inferior para separar la imagen del contenido */
 }
 
-.ventana-emergente-mobile .contenido-formulario {
+.register .content-form{
     max-width: 300px;
     width: 80%;
+    padding: 0 0.75rem; /* Estilos añadidos al formulario */
+    height: 2.875rem; /* Estilos añadidos al formulario */
+    border: 1px solid transparent; /* Estilos añadidos al formulario */
 }
 
-.ventana-emergente-mobile h1 {
+.register h1 {
     color: #fff;
 }
 
 label {
     color: #fff;
     margin-bottom: 8px;
+    font-weight: 600; /* Estilo añadido a las letras del formulario */
 }
 
 input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
+    border: solid 1px black;
+    background-color: #2D1445; 
 }
 
 button {
@@ -69,16 +75,16 @@ button:hover {
 
 /* Estilos adicionales para hacerlo responsive */
 @media only screen and (max-width: 600px) {
-    .ventana-emergente-mobile h1 {
+    .register h1 {
         font-size: 1.5em;
     }
 
-    .ventana-emergente-mobile .contenido-formulario {
+    .register .content-form{
         max-width: 250px;
     }
     
     /* Añadimos reglas para mostrar la ventana emergente en dispositivos móviles */
-    .ventana-emergente-mobile {
+    .register {
         display: flex;
     }
 }
