@@ -1,11 +1,9 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+function abrirVentana() {
+    var ventanaEmergente = document.querySelector('.ventana-emergente-mobile');
+    ventanaEmergente.style.display = 'flex';
+}
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+function cerrarVentana() {
+    var ventanaEmergente = document.querySelector('.ventana-emergente-mobile');
+    ventanaEmergente.style.display = 'none';
+}
