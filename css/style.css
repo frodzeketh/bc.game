@@ -64,3 +64,39 @@ body {
     background-color: #252533; /* Establece el fondo del SVG */
     
 }
+
+
+
+
+
+
+
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252533;
+    padding: 10px;
+}
+
+.nav-icon ion-icon {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.blue {
+    background-color: #007bff;
+}
+
+.red {
+    background-color: #dc3545;
+}
