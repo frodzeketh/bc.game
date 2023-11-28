@@ -6,7 +6,7 @@ body {
 }
 
 .mobile-menu {
-    display: none; /* Inicialmente oculto en pantallas más grandes */
+    display: none;
 }
 
 .menu-item {
@@ -24,12 +24,13 @@ body {
 }
 
 .menu-item svg {
-    margin-bottom: 10px; /* Ajusta el margen según tus preferencias */
-    width: 24px; /* Ajusta el ancho según tus preferencias */
-    height: 24px; /* Ajusta la altura según tus preferencias */
+    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.menu-item.active {
     background-color: #555;
 }
 
@@ -44,4 +45,22 @@ body {
         width: 100%;
         padding: 10px 0;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-item svg {
+    margin-bottom: 6px; /* Ajusta el margen según tus preferencias */
+    width: 23px; /* Ajusta el ancho según tus preferencias */
+    height: 24px; /* Ajusta la altura según tus preferencias */
+    background-color: #252533; /* Establece el fondo del SVG */
+    
 }
