@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ventana Emergente con Formulario</title>
+</head>
+<body>
+
+<div id="ventanaEmergente" class="ventana-emergente">
+    <div class="cerrar" onclick="cerrarVentana()">&times;</div>
+    <div class="imagen-lateral">
+        <!-- Puedes reemplazar la URL de la imagen con la que desees utilizar -->
+        <img src="./bc.png" alt="Imagen">
+    </div>
+    <div class="formulario-lateral">
+        <form action="#" method="post">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
