@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #23252A;
 }
 
 .mobile-menu {
@@ -30,7 +30,7 @@ body {
 
 .menu-item:hover,
 .menu-item.active {
-    background-color: #555;
+    background-color: #1C1E22;
 }
 
 @media only screen and (max-width: 600px) {
@@ -38,13 +38,15 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #252533;
+        background-color: #1C1E22;
         position: fixed;
         bottom: 0;
         width: 100%;
         padding: 10px 0;
     }
 }
+
+
 
 
 
@@ -73,7 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #252533;
+    background-color: #1C1E22;
     padding: 10px;
 }
 
@@ -151,51 +153,3 @@ button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.pic-ctn {
-    position: relative;
-    width: 100vw;
-    height: 100vw; /* Haz que la altura sea igual al ancho para que la imagen ocupe el 100% de la pantalla */
-    overflow: hidden; /* Para ocultar cualquier desbordamiento de la imagen */
-}
-
-@keyframes display {
-    0% {
-        transform: translateX(0%);
-    }
-    25% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    75% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-.pic-ctn > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Haz que la imagen ocupe el 100% del contenedor */
-    height: 100%; /* Ajusta la altura si es necesario */
-    animation: display 15s infinite; /* Ajusta la duración a 15s */
-}
-
-img:nth-child(2) {
-    animation-delay: 5s; /* Ajusta los retrasos para cada imagen */
-}
