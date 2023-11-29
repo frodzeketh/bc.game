@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -70,7 +69,6 @@ body {
 
 
 
-
 .mobile-navbar {
     display: flex;
     justify-content: space-between;
@@ -79,24 +77,134 @@ body {
     padding: 10px;
 }
 
-.nav-icon ion-icon {
-    color: #fff;
-    font-size: 24px;
-}
-
-.nav-button {
-    padding: 8px 16px;
-    border: none;
+button {
+    position: relative;
+    background: linear-gradient(135deg, #F95579, #EF1246, #CF043E);
     border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 140px;
+    height: 35px;
     color: #fff;
-    font-size: 14px;
-    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 1000;
+    font-size: .90rem;
+    
+  }
+  
+  button::before {
+    content: "";
+    background: linear-gradient(135deg, #F95579, #EF1246, #CF043E);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .nav-buttons {
+        display: none;
+    }
+
+    .mobile-navbar {
+        justify-content: flex-end;
+    }
+
+    .nav-icon {
+        order: -1;
+    }
 }
 
-.blue {
-    background-color: #007bff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 100vw; /* Haz que la altura sea igual al ancho para que la imagen ocupe el 100% de la pantalla */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento de la imagen */
 }
 
-.red {
-    background-color: #dc3545;
+@keyframes display {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95%, 100% {
+        transform: translateX(-300%);
+    }
+}
+
+.pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Haz que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Ajusta la altura si es necesario */
+    animation: display 15s infinite; /* Ajusta la duración a 15s */
+}
+
+img:nth-child(2) {
+    animation-delay: 5s; /* Ajusta los retrasos para cada imagen */
 }
